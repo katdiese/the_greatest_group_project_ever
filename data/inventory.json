@@ -5,24 +5,28 @@
       gender: 'male',
       age: 31,
       image: '',
+      origin: 'imported',
     }
     {
       name: 'Dennis',
       gender: 'male',
       age: 32,
       image: '',
+      origin: 'domestic'
     }
     {
       name: 'Kathy',
       gender: 'female',
       age: 28,
       image: '',
+      origin: 'imported'
     }
     {
       name: 'Caleb',
       gender: 'male',
       age: 27,
-      image: ''.
+      image: '',
+      origin: 'domestic'
     }
   ]
   Snails: [
@@ -31,24 +35,28 @@
       gender: 'female',
       age: 10,
       image: '',
+      origin: 'imported',
     }
     {
       name: 'Quinten',
       gender: 'male',
       age: 4,
       image: '',
+      origin: 'domestic',
     }
     {
       name: 'Jolene',
       gender: 'female',
       age: 27,
       image: '',
+      origin: 'imported',
     }
     {
       name: 'Leonard',
       gender: 'male',
       age: 16,
       image: '',
+      origin: 'domestic',
     }
   ]
   Turtles: [
@@ -57,18 +65,21 @@
       gender: 'male',
       age: 8,
       image: '',
+      origin: 'imported',
     }
     {
       name: 'Angelle',
       gender: 'female',
       age: 12,
       image: '',
+      origin: 'domestic',
     }
     {
       name: 'Hephaistos',
       gender: 'male',
       age: 20,
       image: '',
+      origin: 'imported',
     }
   ]
 }
