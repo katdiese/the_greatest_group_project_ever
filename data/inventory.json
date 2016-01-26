@@ -1,28 +1,80 @@
 {
-  Sloths: [
+  "sloths": [
     {
-      name: 'Ben',
-      gender: 'male',
-      age: 31,
-      image: '',
+      "name": "Ben",
+      "age": 31,
+      "gender": "male",
+      "origin": "domestic"
     },
     {
-      name: 'Dennis',
-      gender: 'male',
-      age: 32,
-      image: '',
+      "name": "Kathy",
+      "age": 28,
+      "gender": "female",
+      "origin": "imported"
     },
     {
-      name: 'Kathy',
-      gender: 'female',
-      age: 28,
-      image: '',
+      "name": "Dennis",
+      "age": 32,
+      "gender": "male",
+      "origin": "domestic"
     },
     {
-      name: 'Caleb',
-      gender: 'male',
-      age: 27,
-      image: ''
+      "name": "Caleb",
+      "age": 28,
+      "gender": "female",
+      "origin": "imported"
     }
-  ]
-}
+  ],
+  "snails": [
+    {
+      "name": "Roger",
+      "age": 12,
+      "gender": "male",
+      "origin": "domestic"
+    },
+    {
+     "name": "Clotilda",
+     "gender": "female",
+     "age": 10,
+     "image": ""
+   },
+   {
+     "name": "Quinten",
+     "gender": "male",
+     "age": 4,
+     "image": ""
+   },
+   {
+     "name": "Jolene",
+     "gender": "female",
+     "age": 27,
+     "image": ""
+   },
+   {
+     "name": "Leonard",
+     "gender": "male",
+     "age": 16,
+     "image": ""
+   }
+ ],
+   "Turtles": [
+     {
+       "name": "Tigger",
+       "gender": "male",
+       "age": 8,
+       "image": ""
+     },
+     {
+       "name": "Angelle",
+       "gender": "female",
+       "age": 12,
+       "image": ""
+     },
+     {
+       "name": "Hephaistos",
+       "gender": "male",
+       "age": 20,
+       "image": ""
+     }
+   ]
+ }
