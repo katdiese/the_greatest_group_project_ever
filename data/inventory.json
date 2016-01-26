@@ -4,25 +4,33 @@
       "name": "Ben",
       "age": 31,
       "gender": "male",
-      "origin": "domestic"
+      "origin": "domestic",
+      "image": "images/animalistnews--0372--8-reasons-to-love-sloths-even-more--large.thumb.jpg",
+      "price": 100
     },
     {
       "name": "Kathy",
       "age": 28,
       "gender": "female",
-      "origin": "imported"
+      "origin": "imported",
+      "image": "images/large-Three-toed-Sloth-photo.jpg",
+      "price": 100
     },
     {
       "name": "Dennis",
       "age": 32,
       "gender": "male",
-      "origin": "domestic"
+      "origin": "domestic",
+      "image": "images/sloth_(c)_Jorge_Salas_International_Expeditions.jpeg",
+      "price": 100
     },
     {
       "name": "Caleb",
       "age": 28,
       "gender": "female",
-      "origin": "imported"
+      "origin": "imported",
+      "image": "images/large-Three-toed-Sloth-photo.jpg",
+      "price": 100
     }
   ],
   "snails": [
