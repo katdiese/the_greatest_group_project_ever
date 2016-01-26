@@ -5,6 +5,10 @@ $(document).ready (function () {
 	})
 })
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
 $(document).ready(function() {
   $.ajax({
     url: 'data/inventory.json',
