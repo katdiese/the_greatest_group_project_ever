@@ -16,11 +16,12 @@ $(document).ready(function() {
         var animalName = eachAnimal.name;
         var animalAge = eachAnimal.age;
         var animalGender = eachAnimal.gender;
+        var animalOrigin = eachAnimal.origin;
         var animalPrice = "$"+eachAnimal.price;
-        var animalDescription = "This " +animalGender + " animal is " + animalAge + " years old" ;
+        var animalDescription = "This " +animalGender + " " + animalOrigin + " animal is " + animalAge + " years old" ;
         var animalImage = eachAnimal.image;
 
-        var animalBlock = '<div class="row"><image class="col-md-4"src="'+ animalImage +'"></image><div class="col-md-8"><h2>'+ animalName +'</h2><p>'+ animalPrice +'</p><p>'+ animalDescription +'</p></div></div>';
+        var animalBlock = '<div class="row"><image class="col-md-4"src="'+ animalImage +'"></image><div class="col-md-8"><h2>'+ animalName +'</h2><p>'+ animalPrice +'</p><p>'+ animalDescription +'</p></div><button onclick="updateCart("placeholderID1234")">Add to Cart</button></div><div class="form-group">&nbsp;</div>';
 
         var createAnimalBlock =function () {
           $('#products').append(animalBlock)
