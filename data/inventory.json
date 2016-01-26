@@ -38,31 +38,32 @@
       "name": "Roger",
       "age": 12,
       "gender": "male",
-      "origin": "domestic"
+      "origin": "domestic",
+      "image": "images/animalistnews--0372--8-reasons-to-love-sloths-even-more--large.thumb.jpg"
     },
     {
      "name": "Clotilda",
      "gender": "female",
      "age": 10,
-     "image": ""
+      "image": "images/animalistnews--0372--8-reasons-to-love-sloths-even-more--large.thumb.jpg"
    },
    {
      "name": "Quinten",
      "gender": "male",
      "age": 4,
-     "image": ""
+      "image": "images/animalistnews--0372--8-reasons-to-love-sloths-even-more--large.thumb.jpg"
    },
    {
      "name": "Jolene",
      "gender": "female",
      "age": 27,
-     "image": ""
+      "image": "images/animalistnews--0372--8-reasons-to-love-sloths-even-more--large.thumb.jpg"
    },
    {
      "name": "Leonard",
      "gender": "male",
      "age": 16,
-     "image": ""
+      "image": "images/animalistnews--0372--8-reasons-to-love-sloths-even-more--large.thumb.jpg"
    }
  ],
    "Turtles": [
