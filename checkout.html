@@ -62,18 +62,18 @@
       <p class="form-control-static">Last Name</p>
     </div>
     <div class="col-sm-4">
-      <p class="form-control-static">Company</p>
+      <p class="form-control-static">Email</p>
     </div>
   </div>
   <div class="form-group row">
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText" placeholder="First Name">
+      <input type="text" class="form-control" id="firstNameShipping" placeholder="First Name">
     </div>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText" placeholder="Last Name">
+      <input type="text" class="form-control" id="lastNameShipping" placeholder="Last Name">
     </div>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText" placeholder="Company">
+      <input type="email" class="form-control" id="emailShipping" placeholder="Email">
     </div>
   </div>
   <div class="form-group row">
@@ -86,10 +86,10 @@
   </div>
   <div class="form-group row">
   	<div class="col-sm-6">
-      <input type="text" class="form-control" id="inputText" placeholder="Address Line 1">
+      <input type="text" class="form-control" id="addressLineOneShipping" placeholder="Address Line 1">
     </div>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="inputText" placeholder="Address line 2">
+      <input type="text" class="form-control" id="addressLineTwoShipping" placeholder="Address line 2">
     </div>
   </div>
   <div class="form-group row">
@@ -157,11 +157,11 @@
         </select>
    	</div>
     <div class="col-sm-4">
-      	<input type="text" class="form-control" id="inputText" placeholder="Zip Code">
+      	<input type="text" class="form-control" id="zipCodeShipping" placeholder="Zip Code">
     </div>
     <div class="checkbox">
   		<label>
-    		<input type="checkbox" value="">Shipping Address Same As Billing?
+    		<input type="checkbox" id="sameAsBilling" value="">Shipping Address Same As Billing?
     	</label>
    	</div>
    	</div>
@@ -174,18 +174,18 @@
       <p class="form-control-static">Last Name</p>
     </div>
     <div class="col-sm-4">
-      <p class="form-control-static">Company</p>
+      <p class="form-control-static">Email</p>
     </div>
   </div>
   <div class="form-group row">
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText" placeholder="First Name">
+      <input type="text" class="form-control" id="firstNamebilling" placeholder="First Name">
     </div>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText" placeholder="Last Name">
+      <input type="text" class="form-control" id="lastNameBilling" placeholder="Last Name">
     </div>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputText" placeholder="Company">
+      <input type="email" class="form-control" id="emailShipping" placeholder="Email">
     </div>
   </div>
   <div class="form-group row">
@@ -198,10 +198,10 @@
   </div>
   <div class="form-group row">
   	<div class="col-sm-6">
-      <input type="text" class="form-control" id="inputText" placeholder="Address Line 1">
+      <input type="text" class="form-control" id="addressLineOneBilling" placeholder="Address Line 1">
     </div>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="inputText" placeholder="Address line 2">
+      <input type="text" class="form-control" id="addressLineTwoBilling" placeholder="Address line 2">
     </div>
   </div>
   <div class="form-group row">
@@ -214,7 +214,7 @@
   </div>
   <div class="form-group row">
   	<div class="col-sm-4">
-        <select name="state" class="form-control">
+        <select name="state" class="form-control" id="stateBilling">
             <option value="AL">AL</option>
             <option value="AK">AK</option>
             <option value="AZ">AZ</option>
@@ -269,7 +269,7 @@
         </select>
         </div>
     <div class="col-sm-4">
-      	<input type="text" class="form-control" id="inputText" placeholder="Zip Code">
+      	<input type="text" class="form-control" id="zipCodeBilling" placeholder="Zip Code">
   	</div>
   	</div>
   	<h3>Credit Card Information</h3>
@@ -286,13 +286,13 @@
   	</div>
   	<div class="form-group row">
   		<div class="col-sm-4">
-  			<input type="text" class="form-control" id="inputText" placeholder="Credit Card Number"> 
+  			<input type="text" class="form-control" id="creditCardNumber" placeholder="Credit Card Number">
   		</div>
   		<div class="col-sm-4">
-  			<input type="text" class="form-control" id="inputText" placeholder="Expiration Date"> 
+  			<input type="text" class="form-control" id="experationDate" placeholder="Expiration Date"> 
   		</div>
   		<div class="col-sm-2">
-  			<input type="text" class="form-control" id="inputText" placeholder="CCV Number"> 
+  			<input type="text" class="form-control" id="ccvNumber" placeholder="CCV Number"> 
   		</div>
   		<div class="col-sm-2">
   			<button type="button" class="btn btn-success">Purchase</button>
