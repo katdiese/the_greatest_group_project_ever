@@ -1,85 +1,88 @@
 {
-  Sloths: [
+  "sloths": [
     {
-      name: 'Ben',
-      gender: 'male',
-      age: 31,
-      image: '',
-      origin: 'imported',
-    }
+      "name": "Ben",
+      "age": 31,
+      "gender": "male",
+      "origin": "domestic",
+      "image": "images/animalistnews--0372--8-reasons-to-love-sloths-even-more--large.thumb.jpg",
+      "price": 100
+    },
     {
-      name: 'Dennis',
-      gender: 'male',
-      age: 32,
-      image: '',
-      origin: 'domestic'
-    }
+      "name": "Kathy",
+      "age": 28,
+      "gender": "female",
+      "origin": "imported",
+      "image": "images/large-Three-toed-Sloth-photo.jpg",
+      "price": 100
+    },
     {
-      name: 'Kathy',
-      gender: 'female',
-      age: 28,
-      image: '',
-      origin: 'imported'
-    }
+      "name": "Dennis",
+      "age": 32,
+      "gender": "male",
+      "origin": "domestic",
+      "image": "images/sloth_(c)_Jorge_Salas_International_Expeditions.jpeg",
+      "price": 100
+    },
     {
-      name: 'Caleb',
-      gender: 'male',
-      age: 27,
-      image: '',
-      origin: 'domestic'
+      "name": "Caleb",
+      "age": 28,
+      "gender": "female",
+      "origin": "imported",
+      "image": "images/large-Three-toed-Sloth-photo.jpg",
+      "price": 100
     }
-  ]
-  Snails: [
+  ],
+  "snails": [
     {
-      name: 'Clotilda',
-      gender: 'female',
-      age: 10,
-      image: '',
-      origin: 'imported',
-    }
+      "name": "Roger",
+      "age": 12,
+      "gender": "male",
+      "origin": "domestic"
+    },
     {
-      name: 'Quinten',
-      gender: 'male',
-      age: 4,
-      image: '',
-      origin: 'domestic',
-    }
-    {
-      name: 'Jolene',
-      gender: 'female',
-      age: 27,
-      image: '',
-      origin: 'imported',
-    }
-    {
-      name: 'Leonard',
-      gender: 'male',
-      age: 16,
-      image: '',
-      origin: 'domestic',
-    }
-  ]
-  Turtles: [
-    {
-      name: 'Tigger',
-      gender: 'male',
-      age: 8,
-      image: '',
-      origin: 'imported',
-    }
-    {
-      name: 'Angelle',
-      gender: 'female',
-      age: 12,
-      image: '',
-      origin: 'domestic',
-    }
-    {
-      name: 'Hephaistos',
-      gender: 'male',
-      age: 20,
-      image: '',
-      origin: 'imported',
-    }
-  ]
-}
+     "name": "Clotilda",
+     "gender": "female",
+     "age": 10,
+     "image": ""
+   },
+   {
+     "name": "Quinten",
+     "gender": "male",
+     "age": 4,
+     "image": ""
+   },
+   {
+     "name": "Jolene",
+     "gender": "female",
+     "age": 27,
+     "image": ""
+   },
+   {
+     "name": "Leonard",
+     "gender": "male",
+     "age": 16,
+     "image": ""
+   }
+ ],
+   "Turtles": [
+     {
+       "name": "Tigger",
+       "gender": "male",
+       "age": 8,
+       "image": ""
+     },
+     {
+       "name": "Angelle",
+       "gender": "female",
+       "age": 12,
+       "image": ""
+     },
+     {
+       "name": "Hephaistos",
+       "gender": "male",
+       "age": 20,
+       "image": ""
+     }
+   ]
+ }
