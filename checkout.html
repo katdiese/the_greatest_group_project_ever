@@ -3,7 +3,7 @@
 <head>
   <title>Unit 1 Project - eCommerce Site</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css" rel="stylesheet" integrity="sha256-ZSKfhECi0yCEmGVAuQLWTHtJEn2vBNPexEWsJCIC/Nc= sha512-b+mSnD4QXw1uYwkgJ3d0XxoMXo+ZKHJNTNNFIddJ0IazcwKvKYtIlWADZ1JEREJzxUG428sfCw7qDuswAFcrOQ==" crossorigin="anonymous">
-
+  <link rel="stylesheet" type="text/css" href="receipt.css" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
@@ -35,21 +35,12 @@
     <div class="row">
   	  <h2 class="col-md-3">Checkout!</h2>
     </div>
-    <div class="total" style="background-color: #EFEFEF">
   	  <div class="row">
-  		  <h3 class="col-md-3">Your Purchase:</h3>
+  		  <h3>Your Purchase:</h3>
+        <div id="receipt">
+
+        </div>
       </div>
-	    <div class="row">
-		    <div class="col-md-3">vvs</div>
-		    <div class="col-md-3">saffas</div>
-	    </div>
-	    <div class="row">
-		    <div class="col-md-3">hiosdfjhlxi</div>
-		    <div class="col-md-3">hiosdfjhlxi</div>
-		    <div class="col-md-3">hiosdfjhlxi</div>
-		    <div class="col-md-3">hiosdfjhlxi</div>
-	    </div>
-    </div>
     <form>
       <h3>Shipping Information</h3>
       <div class="form-group row">
@@ -287,10 +278,10 @@
   			  <input type="text" class="form-control" id="creditCardNumber" placeholder="Credit Card Number">
   		  </div>
   		  <div class="col-sm-4">
-  			  <input type="text" class="form-control" id="expirationDate" placeholder="Expiration Date"> 
+  			  <input type="text" class="form-control" id="expirationDate" placeholder="Expiration Date">
   		  </div>
   		  <div class="col-sm-2">
-  			  <input type="text" class="form-control" id="ccvNumber" placeholder="CCV Number"> 
+  			  <input type="text" class="form-control" id="ccvNumber" placeholder="CCV Number">
   		  </div>
   		  <div class="col-sm-2">
   			  <button type="button" class="btn btn-success">Purchase</button>
@@ -335,6 +326,9 @@
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
   <script type="text/javascript" src="scripts/cart.js"></script>
+  <script type="text/javascript">
+    generateReceipt();
+  </script>
 </body>
 
 </html>
