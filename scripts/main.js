@@ -12,6 +12,7 @@ $(document).ready (function () {
 });
 
 
+
 // $(document).ready(function() {
 //   $.ajax({
 //     url: 'data/inventory.json',
