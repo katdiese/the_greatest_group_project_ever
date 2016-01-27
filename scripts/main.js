@@ -14,36 +14,33 @@ $(document).ready(function() {
   $.ajax({
     url: 'data/inventory.json',
     method: 'GET'
-<<<<<<< HEAD
+
 	  }).then(function(data) {
 	$('#item1').html('<img src=' + data.sloths[0].image + '>' + '<figcaption>' + data.sloths[0].name + "<br>$" + data.sloths[1].price + "</figcaption>");
     $('#item2').html('<img src=' + data.sloths[3].image + '>' + '<figcaption>' + data.sloths[3].name + "<br>$" + data.sloths[3].price + "</figcaption>");
     $('#item3').html('<img src=' + data.sloths[2].image + '>' + '<figcaption>' + data.sloths[2].name + "<br>$" + data.sloths[2].price + "</figcaption>");
    });
- 
- });
 
   }).then(function(data) {
     $('#item1').html('<img src=' + data.sloths[0].image + '>' + '<figcaption>' + data.sloths[0].name + "<br>$" + data.sloths[1].price + "</figcaption>");
     $('#item2').html('<img src=' + data.sloths[3].image + '>' + '<figcaption>' + data.sloths[3].name + "<br>$" + data.sloths[3].price + "</figcaption>");
     $('#item3').html('<img src=' + data.sloths[2].image + '>' + '<figcaption>' + data.sloths[2].name + "<br>$" + data.sloths[2].price + "</figcaption>");
-  });
-
 });
+
 
 
 // Email validation
 // function to validate email address
 // Returns true or false
-function validateEmail($email) {
-  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-  return emailReg.test($email);
-}
-
-$( "#email-signup-submit" ).click(function() {
-    function validateEmail();
-    if( !validateEmail("#email-signup-input".val()) { 
-      alert( "Behold the power of jQuery! Swear fealty to the jQuery gods and try again with a real email address" );
-    }
-});
+// function validateEmail($email) {
+//   var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+//   return emailReg.test($email);
+// }
+// 
+// $( "#email-signup-submit" ).click(function() {
+//     function validateEmail();
+//     if( !validateEmail("#email-signup-input".val()) { 
+//       alert( "Behold the power of jQuery! Swear fealty to the jQuery gods and try again with a real email address" );
+//     }
+// });
 
