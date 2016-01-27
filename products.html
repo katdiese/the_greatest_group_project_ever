@@ -36,8 +36,26 @@
   <div class="container">
     <div class="row">
       <h2>Products</h2>
-      <p class="lead">Sort By Category 1: Category Category Category Category</p>
-      <p class="lead">Sort By Category 2: Category Category Category Cagegory</p>
+      <p class="lead">Sort By Species:
+        <button onclick="updateOptions('species', 'sloths')">Sloths</button>
+        <button onclick="updateOptions('species', 'turtles')">Turtles</button>
+        <button onclick="updateOptions('species', 'snails')">Snails</button>
+        <button onclick="updateOptions('species')">Show All</button>
+      </p>
+      <p class="lead">Sort By Gender:
+        <button onclick="updateOptions('gender', 'male')">Male</button>
+        <button onclick="updateOptions('gender', 'female')">Female</button>
+        <button onclick="updateOptions('gender')">Show All</button>
+      </p>
+      <p class="lead">Sort By Price:
+        <button onclick="updateOptions('price', '0-100')">$0 to $100</button>
+        <button onclick="updateOptions('price', '100-500')">$100 to $500</button>
+        <button onclick="updateOptions('price', '500-')">$500+</button>
+        <button onclick="updateOptions('price')">Show All</button>
+      </p>
+      <p>
+         <button onclick="updateOptions()">Clear All Filters</button>
+      </p>
     </div>
     <div class="container" id="products">
     </div>
