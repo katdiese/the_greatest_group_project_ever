@@ -45,6 +45,7 @@
       "origin": "domestic",
       "image": "images/snail.png",
       "price": 25,
+      "origin": "domestic",
       "id":"sn001"
     },
     {
@@ -53,6 +54,7 @@
      "age": 10,
      "image": "images/snail.png",
       "price": 150,
+      "origin": "domestic",
       "id":"sn002"
    },
    {
@@ -61,6 +63,7 @@
      "age": 4,
      "image": "images/snail.png",
       "price": 120,
+      "origin": "domestic",
       "id":"sn003"
    },
    {
@@ -69,6 +72,7 @@
      "age": 27,
      "image": "images/snail.png",
       "price": 10,
+      "origin": "domestic",
       "id":"sn004"
    },
    {
@@ -77,6 +81,7 @@
      "age": 16,
      "image": "images/snail.png",
       "price": 27000,
+      "origin": "domestic",
       "id":"sn005"
    }
  ],
