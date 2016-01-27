@@ -20,7 +20,7 @@ $(document).ready(function() {
         var animalPrice = "$"+eachAnimal.price;
         var animalDescription = "This " +animalGender + " " + animalOrigin + " animal is " + animalAge + " years old" ;
         var animalImage = eachAnimal.image;
-        var animalID = eachAnimal.id
+        var animalID = eachAnimal.id;
 
         var animalBlock = '<div class="row"><image class="col-md-4"src="'+ animalImage +'"></image><div class="col-md-8"><h2>'+ animalName +'</h2><p>'+ animalPrice +'</p><p>'+ animalDescription +'</p></div><button onclick="updateCart("'+ animalID +'")">Add to Cart</button></div><div class="form-group">&nbsp;</div>';
 
@@ -33,3 +33,11 @@ $(document).ready(function() {
     }
   });
 });
+
+
+// var binaryFilter = function (category){
+//   //If the class has the category display: initial
+//   //else add display: none
+//   if ($('.category')) {$('category').css(display: iniital)}
+//     else
+// }
