@@ -67,18 +67,18 @@
       </div>
       <div class="form-group row">
   	    <div class="col-sm-6">
-          <p class="form-control-static">Address Line 1</p>
+          <p class="form-control-static">Address</p>
         </div>
         <div class="col-sm-6">
-          <p class="form-control-static">Address Line 2</p>
+          <p class="form-control-static">City</p>
         </div>
       </div>
       <div class="form-group row">
   	    <div class="col-sm-6">
-          <input type="text" class="form-control" id="addressLineOneShipping" placeholder="Address Line 1">
+          <input type="text" class="form-control" id="addressShipping" placeholder="Address">
         </div>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="addressLineTwoShipping" placeholder="Address line 2">
+          <input type="text" class="form-control" id="cityShipping" placeholder="City">
         </div>
       </div>
       <div class="form-group row">
@@ -179,26 +179,26 @@
       </div>
       <div class="form-group row">
   	    <div class="col-sm-6">
-          <p class="form-control-static">Address Line 1</p>
+          <p class="form-control-static">Billing Address</p>
         </div>
         <div class="col-sm-6">
-          <p class="form-control-static">Address Line 2</p>
+          <p class="form-control-static">Billing City</p>
         </div>
       </div>
       <div class="form-group row">
   	    <div class="col-sm-6">
-          <input type="text" class="form-control" id="addressLineOneBilling" enabled="" placeholder="Address Line 1">
+          <input type="text" class="form-control" id="addressBilling" enabled="" placeholder="Billing Address">
         </div>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="addressLineTwoBilling" enabled="" placeholder="Address line 2">
+          <input type="text" class="form-control" id="cityBilling" enabled="" placeholder="Billing City">
         </div>
       </div>
       <div class="form-group row">
   	    <div class="col-sm-4">
-        	<p class="form-control-static">State</p>
+        	<p class="form-control-static">Billing State</p>
         </div>
         <div class="col-sm-4">
-      	  <p class="form-control-static">Zip Code</p>
+      	  <p class="form-control-static">Billing Zip Code</p>
         </div>
       </div>
       <div class="form-group row">
@@ -258,7 +258,7 @@
           </select>
         </div>
         <div class="col-sm-4">
-      	  <input type="text" class="form-control" id="zipCodeBilling" enabled="" placeholder="Zip Code">
+      	  <input type="text" class="form-control" id="zipCodeBilling" enabled="" placeholder="Billing Zip Code">
   	    </div>
   	  </div>
   	  <h3>Credit Card Information</h3>
@@ -284,7 +284,7 @@
   			  <input type="text" class="form-control" id="ccvNumber" placeholder="CCV Number">
   		  </div>
   		  <div class="col-sm-2">
-  			  <button type="button" class="btn btn-success">Purchase</button>
+  			  <button type="button" id="purchaseButton" class="btn btn-success">Purchase</button>
   		  </div>
   	  </div>
     </form>
@@ -324,7 +324,7 @@
   </div>
   <!-- your code here! -->
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script type="text/javascript" src="scripts/main.js"></script>
+  <script type="text/javascript" src="scripts/checkout.js"></script>
   <script type="text/javascript" src="scripts/cart.js"></script>
   <script type="text/javascript">
     generateReceipt();
