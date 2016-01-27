@@ -27,16 +27,13 @@
           <li><a href="checkout.html">Checkout</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li id="cartCount">Shopping Cart: <span>0</span></li>
+          <li id="cartCount"><h4>Shopping Cart: <span></span></h4></li>
         </ul>
       </div>
     </div>
   </nav>
   <div class="container">
     <div class="row">
-      <div id="receipt">
-
-      </div>
     </div>
     <div class="row">
       <h2>Products</h2>
@@ -62,8 +59,21 @@
       </p>
     </div>
   </div>
-    <div class="container" id="products">
+  <div class="container">
+    <div class="row">
+      <div id="products" class="col-md-8">
+      </div>
+      <div class = "panel panel-primary col-md-4">
+         <div class="panel-heading text-center">
+            <h4>Shopping Cart</h4>
+         </div>
+         <div class="panel-body" id="receipt">
+            Panel content
+         </div>
+      </div>
     </div>
+  </div>
+  <div class="container">
     <div class="row"> <!-- footer -->
       <div class="col-md-3">
         <h3 class="text-center">Visit Us</h3>

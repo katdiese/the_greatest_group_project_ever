@@ -47,7 +47,7 @@ function getCartCount() {
  *
  * @return {type}  undefined
  */
-function generateReceipt() {
+function generateReceipt(displayStyle) {
   $.ajax({
     url: 'data/inventory.json',
     method: 'GET'
@@ -55,7 +55,7 @@ function generateReceipt() {
     // Where to store the item list
     var container = $('#receipt');
     // Clear the item list.
-    container.html('');
+    container.html('<h5>Total: $0</h5>');
     // Running total for our price
     var total = 0;
     // Get the items from sessionStorage
@@ -65,8 +65,7 @@ function generateReceipt() {
     // Only put an item list if we have items.
     if (keys.length > 0) {
       // Start a table.
-      var innerHTML = "<table><tr><th>Name</th><th>Gender</th><th>Species</th>" +
-        "<th>Origin</th><th>Price</th><th>Picture</th><th></th></tr>";
+      var innerHTML = '<div class="row">'
       keys.forEach(function(key) {
         // Get the animal.
         var animalType = getAnimalFromID(key);
@@ -75,25 +74,24 @@ function generateReceipt() {
           return specificAnimal.id === key;
         })[0];
         // Populate the row with data.
-        innerHTML += "<tr><td>" + animal.name + '</td><td>' + animal.gender +
-          '</td><td>' + animalType.substring(0, animalType.length - 1) +
-          '</td><td>' + animal.origin +
-          '</td><td>$' + animal.price +
-          '</td><td class="image"><img src="' + animal.image + '">' +
-          '</td><td>' +
-          '<button onclick="removeItem(\'' + animal.id + '\')">Remove Me!' +
-          '</button></td></tr>';
+        innerHTML += '<div class="panel panel-default' + displayStyle +'">' +
+          '<div class="panel-body">' +
+          '<h3>' + animal.name + '</h3>' +
+          '<h5>Gender: ' + animal.gender + '</h5>' +
+          '<h5>Species: ' +
+            animalType.substring(0, animalType.length - 1) + '</h5>' +
+          '<h5>Origin: ' + animal.origin + '</h5>' +
+          '<h5>Price: $' + animal.price + '</h5>' +
+          '<p><img class="img-responsive img-rounded" src="' + animal.image + '"></p>' +
+          '<p>' +
+            '<button onclick="removeItem(\'' + animal.id + '\')">Remove!' +
+            '</button></p>' +
+          '</div></div>' ;
           total += animal.price;
       });
       // End the list
-      innerHTML += '<tr>' +
-          '<td class="invisible"></td>' +
-          '<td class="invisible"></td>' +
-          '<td class="invisible"></td>' +
-          '<td class="info">Total: </td>' +
-          '<td class="price">$' + total + '</td>' +
-          '<td class="invisible"></td>' +
-          '<td class="invisible"></td>' + '</tr>';
+      innerHTML += '</div>' +
+        '<h5>Total: $' + total + '</h5>';
       container.html(innerHTML);
     }
   });
