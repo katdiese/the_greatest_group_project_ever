@@ -1,15 +1,18 @@
 table tr {
   height: 50px;
 }
+table tr th {
+  text-align: center;
+}
 table tr td {
-  width: 150px;
+  width: 125px;
   text-align: center
 }
 table tr td .image {
-  width: 200px;
+  width: 150px;
 }
 table tr td img {
-  max-width: 200px;
+  max-width: 150px;
 }
 table tr:nth-child(2n + 1){
   background-color: rgb(238, 238, 238);
