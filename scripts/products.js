@@ -83,15 +83,3 @@ function populateProducts(data) {
     }
   });
 });
-
-
-// var binaryFilter = function (category){
-//   //If the class has the category display: initial
-//   //else add display: none
-//   if ($('.category')) {$('category').css(display: iniital)}
-//     else
-// }
-=======
-  }
-}
->>>>>>> a6b266662a5d62e536184fc653672b7a7b5e7358
