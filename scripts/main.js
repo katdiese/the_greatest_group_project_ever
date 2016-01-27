@@ -24,9 +24,9 @@ $(document).ready(function() {
 });
 
 // Hover event for the three main images
-$("[id*='item']").hover(function(){
-    ('#hover-text').show();
-});
+// $("[id*='item']").hover(function(){
+//     ('#hover-text').show();
+// });
 
 // Email validation
 // function to validate email address
