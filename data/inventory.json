@@ -43,7 +43,7 @@
       "age": 12,
       "gender": "male",
       "origin": "domestic",
-      "image": "images/snail.png",
+      "image": "images/snail.jpeg",
       "price": 25,
       "origin": "domestic",
       "id":"sn001"
@@ -52,7 +52,7 @@
      "name": "Clotilda",
      "gender": "female",
      "age": 10,
-     "image": "images/snail.png",
+     "image": "images/snail.jpeg",
       "price": 150,
       "origin": "domestic",
       "id":"sn002"
@@ -61,7 +61,7 @@
      "name": "Quinten",
      "gender": "male",
      "age": 4,
-     "image": "images/snail.png",
+     "image": "images/snail.jpeg",
       "price": 120,
       "origin": "domestic",
       "id":"sn003"
@@ -70,7 +70,7 @@
      "name": "Jolene",
      "gender": "female",
      "age": 27,
-     "image": "images/snail.png",
+     "image": "images/snail.jpeg",
       "price": 10,
       "origin": "domestic",
       "id":"sn004"
@@ -79,7 +79,7 @@
      "name": "Leonard",
      "gender": "male",
      "age": 16,
-     "image": "images/snail.png",
+     "image": "images/snail.jpeg",
       "price": 27000,
       "origin": "domestic",
       "id":"sn005"
