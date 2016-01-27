@@ -78,8 +78,7 @@ function populateProducts(data) {
       var createAnimalBlock = function() {
         $('#products').append(animalBlock);
       };
-
       createAnimalBlock();
     }
-  });
-});
+  }
+}
