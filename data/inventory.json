@@ -92,7 +92,8 @@
        "age": 8,
      "image": "images/turtle.jpg",
       "price": 220,
-      "id":"tu001"
+      "id":"tu001",
+      "origin": "domestic"
      },
      {
        "name": "Angelle",
@@ -100,7 +101,8 @@
        "age": 12,
      "image": "images/turtle.jpg",
       "price": 221,
-      "id":"tu002"
+      "id":"tu002",
+      "origin": "imported"
      },
      {
        "name": "Hephaistos",
@@ -108,7 +110,8 @@
        "age": 20,
      "image": "images/turtle.jpg",
       "price": 1022,
-      "id":"tu003"
+      "id":"tu003",
+      "origin": "imported"
      }
    ]
  }
