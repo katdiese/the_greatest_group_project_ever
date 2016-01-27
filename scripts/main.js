@@ -11,29 +11,7 @@ $(document).ready (function () {
 	});
 });
 
-
-
-// $(document).ready(function() {
-//   $.ajax({
-//     url: 'data/inventory.json',
-//     method: 'GET'
-
-// 	  }).then(function(data) {
-// 	$('#item1').html('<img src=' + data.sloths[0].image + '>' + '<figcaption>' + data.sloths[0].name + "<br>$" + data.sloths[1].price + "</figcaption>");
-//     $('#item2').html('<img src=' + data.sloths[3].image + '>' + '<figcaption>' + data.sloths[3].name + "<br>$" + data.sloths[3].price + "</figcaption>");
-//     $('#item3').html('<img src=' + data.sloths[2].image + '>' + '<figcaption>' + data.sloths[2].name + "<br>$" + data.sloths[2].price + "</figcaption>");
-//    });
-//  });
-//   }).then(function(data) {
-//     $('#item1').html('<img src=' + data.sloths[0].image + '>' + '<figcaption>' + data.sloths[0].name + "<br>$" + data.sloths[1].price + "</figcaption>");
-//     $('#item2').html('<img src=' + data.sloths[3].image + '>' + '<figcaption>' + data.sloths[3].name + "<br>$" + data.sloths[3].price + "</figcaption>");
-//     $('#item3').html('<img src=' + data.sloths[2].image + '>' + '<figcaption>' + data.sloths[2].name + "<br>$" + data.sloths[2].price + "</figcaption>");
-//   });
-
-// });
-
 //Customer Object - CP
-
 var Customer = function () {
 	this.firstNameShipping = firstNameShipping;
 	this.lastNameShipping = lastNameShipping;
@@ -53,6 +31,8 @@ var Customer = function () {
 	this.ccvNumber = ccvNumber;
 };
 
+
+//appends images of featured animals to index.html - KD
 $(document).ready(function() {
   $.ajax({
     url: 'data/inventory.json',
