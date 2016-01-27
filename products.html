@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
   <title>Unit 1 Project - eCommerce Site</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css" rel="stylesheet" integrity="sha256-ZSKfhECi0yCEmGVAuQLWTHtJEn2vBNPexEWsJCIC/Nc= sha512-b+mSnD4QXw1uYwkgJ3d0XxoMXo+ZKHJNTNNFIddJ0IazcwKvKYtIlWADZ1JEREJzxUG428sfCw7qDuswAFcrOQ==" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-
+  <link rel="stylesheet" type="text/css" href="receipt.css" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
@@ -35,10 +34,34 @@
   </nav>
   <div class="container">
     <div class="row">
-      <h2>Products</h2>
-      <p class="lead">Sort By Category 1: Category Category Category Category</p>
-      <p class="lead">Sort By Category 2: Category Category Category Cagegory</p>
+      <div id="receipt">
+
+      </div>
     </div>
+    <div class="row">
+      <h2>Products</h2>
+      <p class="lead">Sort By Species:
+        <button onclick="updateOptions('species', 'sloths')">Sloths</button>
+        <button onclick="updateOptions('species', 'turtles')">Turtles</button>
+        <button onclick="updateOptions('species', 'snails')">Snails</button>
+        <button onclick="updateOptions('species')">Show All</button>
+      </p>
+      <p class="lead">Sort By Gender:
+        <button onclick="updateOptions('gender', 'male')">Male</button>
+        <button onclick="updateOptions('gender', 'female')">Female</button>
+        <button onclick="updateOptions('gender')">Show All</button>
+      </p>
+      <p class="lead">Sort By Price:
+        <button onclick="updateOptions('price', '0-100')">$0 to $100</button>
+        <button onclick="updateOptions('price', '100-500')">$100 to $500</button>
+        <button onclick="updateOptions('price', '500-')">$500+</button>
+        <button onclick="updateOptions('price')">Show All</button>
+      </p>
+      <p>
+         <button onclick="updateOptions()">Clear All Filters</button>
+      </p>
+    </div>
+  </div>
     <div class="container" id="products">
     </div>
     <div class="row"> <!-- footer -->
@@ -77,5 +100,8 @@
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script type="text/javascript" src="scripts/products.js"></script>
   <script type="text/javascript" src="scripts/cart.js"></script>
+  <script type="text/javascript">
+    generateReceipt();
+  </script>
 </body>
 </html>
