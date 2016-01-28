@@ -5,6 +5,7 @@ $(document).ready (function () {
 //clicking checkbox on checkout.html disables billing text fields - CP
 
 	$('#sameAsBilling').change(function () {
+    $('#shipping-info').toggle();
 		$('#firstNameBilling').prop('disabled', $(this).is(':checked'));
 		$('#lastNameBilling').prop('disabled', $(this).is(':checked'));
 		$('#emailBilling').prop('disabled', $(this).is(':checked'));
