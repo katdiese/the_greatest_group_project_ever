@@ -53,11 +53,11 @@ $(document).ready(function() {
 
   // Hover actions
   
-  $(document).on('mouseenter', 'img', function() {
+  $(document).on('mouseenter', '.hover', function() {
     $(this).css('opacity', .5);
   })
   
-  $(document).on('mouseleave', 'img', function() {
+  $(document).on('mouseleave', '.hover', function() {
     $(this).css('opacity', 1);
   })   
   
