@@ -1,7 +1,7 @@
 $(document).ready (function () {
 	console.log('sup bud');
 });
- 
+
 //clicking checkbox on checkout.html disables billing text fields - CP
 
 	$('#sameAsBilling').change(function () {
@@ -12,6 +12,24 @@ $(document).ready (function () {
 		$('#cityBilling').prop('disabled', $(this).is(':checked'));
 		$('#stateBilling').prop('disabled', $(this).is(':checked'));
 		$('#zipCodeBilling').prop('disabled', $(this).is(':checked'));
+		if ($(this).is(':checked')) {
+			$('#firstNameBilling').val($('#firstNameShipping').val());
+			$('#lastNameBilling').val($('#lastNameShipping').val());
+			$('#emailBilling').val($('#emailShipping').val());
+			$('#addressBilling').val($('#addressShipping').val());
+			$('#cityBilling').val($('#cityShipping').val());
+			$('#stateBilling').val($('#stateShipping').val());
+			$('#zipCodeBilling').val($('#zipCodeShipping').val());
+		} else {
+			$('#firstNameBilling').val('');
+			$('#lastNameBilling').val('');
+			$('#emailBilling').val('');
+			$('#addressBilling').val('');
+			$('#cityBilling').val('');
+			$('#stateBilling').val('');
+			$('#zipCodeBilling').val('Choose');
+		}
+
 	});
 
 
@@ -27,7 +45,7 @@ $('#purchaseButton').on('click', function () {
 		addressBilling: $('#addressBilling').val() +' '+ $('#cityBilling').val() +', '+ $('#zipCodeBilling').val(),
 		emailBilling: $('#emailBilling').val()
 	};
-	
+
 	//populates NameOnCard
 	var nameCreditCard = function () {
 		if (shippingInfo.nameShipping === billingInfo.nameBilling) {
@@ -46,14 +64,14 @@ $('#purchaseButton').on('click', function () {
 		} else {
 			return zipBill;
 		}
-	};	
-	
+	};
+
 	var creditCardInfo = {
 	 	nameOnCard: nameCreditCard(),
 	 	ccNumber: $('#creditCardNumber').val(),
 	 	expDate: $('#expirationDate').val(),
 	 	ccv: $('#ccvNumber').val(),
-	 	zipCard: zipKing 
+	 	zipCard: zipKing
 	};
 
 	console.log(shippingInfo, billingInfo, creditCardInfo);
@@ -68,12 +86,12 @@ $(document).on('ready', function() {
 $('.order').on('click', function(){
   var cardInfo = {
     number: $( '.card-number' ).val(),
-    cvc: $('.card-cvc').val(), 
+    cvc: $('.card-cvc').val(),
     exp_month: $('.card-expiry').val().split('/')[0],
     exp_year: $('.card-expiry').val().split('/')[1]
   };
-  
-  Stripe.card.createToken(cardInfo, stripeResponseHandler);  
+
+  Stripe.card.createToken(cardInfo, stripeResponseHandler);
 });
 
 $('.card-number').on('blur', function(){
@@ -83,8 +101,8 @@ $('.card-number').on('blur', function(){
     cardNum.css('color', 'red');
   } else {
     cardNum.css('color', 'green');
-  } 
-}); 
+  }
+});
 
 $('.card-cvc').on('blur', function(){
   // do something
@@ -93,7 +111,7 @@ $('.card-cvc').on('blur', function(){
     cardCVC.css('color', 'red');
   } else {
     cardCVC.css('color', 'green');
-  } 
+  }
 });
 
 $('.card-expiry').on('blur', function(){
@@ -105,7 +123,7 @@ $('.card-expiry').on('blur', function(){
     cardExpiry.css('color', 'red');
   } else {
     cardExpiry.css('color', 'green');
-  } 
+  }
 });
 
 function stripeResponseHandler(status, response) {
