@@ -37,10 +37,24 @@ $('#purchaseButton').on('click', function () {
 		}
 	};
 
+	//populates zipCard
+	var zipShip = $('#zipCodeShipping').val();
+	var zipBill = $('#zipCodeBilling').val();
+	var zipKing = function () {
+		if (zipShip === zipBill) {
+			return zipShip;
+		} else {
+			return zipBill;
+		}
+	};	
+	
 	var creditCardInfo = {
 	 	nameOnCard: nameCreditCard(),
-	 	
-	 };
+	 	ccNumber: $('#creditCardNumber').val(),
+	 	expDate: $('#expirationDate').val(),
+	 	ccv: $('#ccvNumber').val(),
+	 	zipCard: zipKing 
+	};
 
 	console.log(shippingInfo, billingInfo, creditCardInfo);
 });
